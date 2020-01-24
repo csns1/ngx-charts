@@ -12,8 +12,7 @@ import {
   SimpleChanges
 } from '@angular/core';
 
-import { fromEvent as observableFromEvent } from 'rxjs';
-import { debounceTime } from 'rxjs/operators';
+
 import { VisibilityObserver } from '../utils/visibility-observer';
 
 @Component({

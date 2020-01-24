@@ -1,14 +1,13 @@
 {
   "name": "ngx-charts",
-  "version": "0.0.0",
+  "version": "13.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "npm run build:lib && ng build --prod",
-    "build:lib": "ng build @swimlane/ngx-charts && npm run copy-files",
+    "build:lib": "ng build @swimlane/ngx-charts",
     "build:demo": "npm run build:lib && cross-env NODE_ENV=production ng build --prod --base-href=\"/ngx-charts/\"",
     "package": "npm run build:lib",
-    "copy-files": "cp README.md dist/swimlane/ngx-charts/README.md && cp LICENSE dist/swimlane/ngx-charts/LICENSE",
     "ci": "npm run lint && npm run test:ci && npm run prettier:ci",
     "test": "ng test @swimlane/ngx-charts",
     "test:ci": "ng test @swimlane/ngx-charts --watch=false --progress=false --browsers=ChromeHeadlessCI",
